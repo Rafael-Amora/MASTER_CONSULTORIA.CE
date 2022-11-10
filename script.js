@@ -7,25 +7,22 @@ $(".galeria").slick({
     nextArrow: false,
 });
 
+// Select button
+var button = document.getElementById('read_button');
 
-var x = true;
-$('#card1').click(function () {
-    if ($(window).width() > 768)
-        if (x) {
-            x = false;
-            $(this).animate({
-                height: "440px",
-            }, 500);
-            $('#c1').css('display', 'block');
-            $('#seta1').css('transform', 'rotate(90deg)');
+// Click Event
+button.addEventListener('click', function () {
+    // Select card
+    var card = document.querySelector('.card');
 
-        } else {
-            x = true;
-            $(this).animate({
-                height: "188px",
-            }, 500);
-            $('#c1').css('display', 'none')
-            $('#seta1').css('transform', 'rotate(0deg)');
-        }
+    // Add/Remove Class Active
+    card.classList.toggle('active');
 
+    if (card.classList.contains('active')) {
+        // Change button text if has class active
+        return button.textContent = 'Read less';
+    }
+
+    // Change button text if hasn't class active
+    button.textContent = 'Read more';
 });
