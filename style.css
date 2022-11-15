@@ -51,8 +51,10 @@ header {
     align-items: center;
     padding-left: 110px;
     border-bottom: 3px #e2e1a6 solid;
+}
 
-
+#contato {
+    border: 3px #e2e1a6 solid;
 
 }
 
