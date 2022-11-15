@@ -7,13 +7,14 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    background-color: rgba(57, 57, 57, 255);
+
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 100%;
     zoom: 0.75;
+    background-color: rgba(57, 57, 57, 255);
 }
 
 body p {
@@ -27,6 +28,9 @@ body ul {
 
 header {
     display: flex;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
 }
 
 .logo img {
@@ -34,6 +38,7 @@ header {
     height: 120px;
     width: 400px;
     border-bottom: 3px #e2e1a6 solid;
+
 
 }
 
@@ -46,6 +51,7 @@ header {
     align-items: center;
     padding-left: 110px;
     border-bottom: 3px #e2e1a6 solid;
+
 
 
 }
@@ -81,7 +87,7 @@ header {
     background-size: cover;
 }
 
-h1 {
+#empresa h1 {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -150,7 +156,6 @@ h1 {
 
 #serviços {
     width: 1000px;
-    background-color: #fbfbf0;
     border-radius: 8px;
     margin-top: 30px;
     margin-left: auto;
@@ -237,114 +242,24 @@ h1 {
 
 /* footer */
 footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 250px;
     background-color: #3f3f3f;
-    padding: 5em 0;
-    padding-bottom: 40px;
     border-top: 5px solid #06d62e;
+    padding: 60px 0px 60px 20px;
+    color: white;
+    flex-wrap: wrap;
 }
 
-footer h2,
-footer p,
-footer a,
-footer span {
-    color: #D1D1D1;
+.footer-box1 {
+    display: flex;
+    align-items: center;
 }
 
-footer h2 {
-    font-weight: 400;
+.footer-box1 img {
+    height: 100px;
 }
-
-footer a {
-    text-decoration: none;
-}
-
-footer ul {
-    padding: 0;
-}
-
-footer li {
-    list-style: none;
-}
-
-.footer-box {
-    width: 31%;
-    padding: 1%;
-    float: left;
-}
-
-footer .wrapper:after {
-    clear: both;
-    content: "";
-    display: block;
-}
-
-.company-footer {
-    width: 80%;
-
-}
-
-.company-footer h2 {
-    margin-top: 10px;
-}
-
-.company-footer h2,
-.company-footer p {
-    margin-bottom: 20px;
-}
-
-.footer-list li {
-    margin-bottom: 15px;
-}
-
-.footer-list a {
-    transition: 0.5s;
-}
-
-.footer-list a:hover {
-    color: #FFF;
-}
-
-.footer-list li:after {
-    clear: both;
-    content: "";
-    display: block;
-}
-
-.articles-footer {
-    width: 80%;
-}
-
-.footer-list.footer-article-list span {
-    display: block;
-    float: none;
-}
-
-.fab {
-    font-size: 30px;
-    margin-right: 10px;
-    float: left;
-}
-
-.footer-list li span {
-    float: left;
-    height: 30px;
-    line-height: 30px;
-}
-
-
-.footer-bottom p {
-    font-weight: 600;
-    margin-top: 40px;
-}
-
-footer li {
-    color: #fff;
-}
-
-.company-footer img h2 p {
-    border-bottom: 1000px;
-}
-
 
 
 
@@ -365,4 +280,6 @@ footer li {
     .cards section.card button {
         font-size: 70%;
     }
+
+    footer {}
 }
