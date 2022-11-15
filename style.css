@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    background-color: rgba(57, 57, 57, 255);
 }
 
 body {
@@ -24,7 +25,6 @@ body ul {
 }
 
 
-
 header {
     display: flex;
 }
@@ -33,36 +33,52 @@ header {
     margin: auto;
     height: 120px;
     width: 400px;
+    border-bottom: 3px #e2e1a6 solid;
 
 }
 
 .menu {
     height: 120px;
-    width: 70%;
-    background-color: white;
+    width: 100%;
+    background-color: rgba(57, 57, 57, 255);
     display: flex;
     gap: 80px;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 110px;
+    border-bottom: 3px #e2e1a6 solid;
+
 
 }
 
 .menu a {
-    color: black;
+    color: white;
     font-size: 24px;
 }
 
+
 .itens {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 800px;
+    width: 100%;
 }
 
-.itens img {
-    height: 700px;
-    width: 100%;
+#c1 {
+    background-image: url(./img/trabalho2.jpg);
     background-size: cover;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.253);
+}
+
+#c2 {
+    background-image: url(./img/trabalho3.jpg);
+    background-size: cover;
+}
+
+#c3 {
+    background-image: url(./img/trabalho4.jpg);
+    background-size: cover;
+}
+
+#c4 {
+    background-image: url(./img/trabalho5.jpg);
+    background-size: cover;
 }
 
 h1 {
@@ -76,9 +92,14 @@ h1 {
     margin-top: auto;
 }
 
+#empresa h1 {
+    color: white;
+
+}
+
 #empresa {
     width: 1500px;
-    background-color: white;
+    background-color: rgba(57, 57, 57, 255);
     border-radius: 8px;
     margin-top: 50px;
     margin-left: auto;
@@ -94,12 +115,14 @@ h1 {
     padding: 15px;
     font-size: medium;
     font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
 }
 
 #empresa p {
     margin-left: 100px;
     font-size: 17px;
     margin-bottom: 15px;
+    color: white;
 }
 
 
@@ -110,6 +133,7 @@ h1 {
     margin-top: 10px;
     font-size: medium;
     margin-bottom: 30px;
+    color: white;
 }
 
 #empresa img {
@@ -153,6 +177,7 @@ h1 {
 
 .cards {
     display: flex;
+    align-items: flex-start;
     gap: 24px;
     padding: 32px;
 }
@@ -160,12 +185,13 @@ h1 {
 .card-contact {
     display: flex;
     flex-direction: column;
-    background-color: #3f3f3f;
+    background-color: rgba(57, 57, 57, 255);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
     padding: 24px;
     width: 300px;
     text-align: center;
     position: relative;
+    font-size: 14px;
 }
 
 .icon {
@@ -208,6 +234,117 @@ h1 {
 .content p {
     margin-bottom: 10px;
 }
+
+/* footer */
+footer {
+    background-color: #3f3f3f;
+    padding: 5em 0;
+    padding-bottom: 40px;
+    border-top: 5px solid #06d62e;
+}
+
+footer h2,
+footer p,
+footer a,
+footer span {
+    color: #D1D1D1;
+}
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-box {
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer {
+    width: 80%;
+
+}
+
+.company-footer h2 {
+    margin-top: 10px;
+}
+
+.company-footer h2,
+.company-footer p {
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 15px;
+}
+
+.footer-list a {
+    transition: 0.5s;
+}
+
+.footer-list a:hover {
+    color: #FFF;
+}
+
+.footer-list li:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.articles-footer {
+    width: 80%;
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+    float: none;
+}
+
+.fab {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-list li span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.footer-bottom p {
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+footer li {
+    color: #fff;
+}
+
+.company-footer img h2 p {
+    border-bottom: 1000px;
+}
+
 
 
 
