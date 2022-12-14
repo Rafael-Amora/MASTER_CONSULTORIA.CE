@@ -327,7 +327,9 @@ footer {
         font-size: 70%;
     }
 
-
+    #g {
+        display: none;
+    }
 
     .logo {
         display: none;
