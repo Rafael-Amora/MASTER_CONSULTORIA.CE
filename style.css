@@ -127,36 +127,61 @@ header {
 }
 
 
-#empresa h2 {
-    margin-left: 30px;
+.textos1 {
     margin-top: 15px;
-    padding: 15px;
     font-size: medium;
     font-family: 'Montserrat Alternates', sans-serif;
     color: black;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-#empresa p {
-    margin-left: 100px;
-    font-size: 17px;
-    margin-bottom: 15px;
-    color: black;
+.textos1 p {
+    font-size: 15px;
 }
 
-
-
-#empresa ul {
-    list-style-type: square;
-    margin-left: 50px;
-    margin-top: 10px;
+.textos2 {
+    margin-top: 15px;
     font-size: medium;
-    margin-bottom: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: black;
+    text-align: center;
 }
 
-.img_empresa {
-    margin: auto;
+.textos2 ul li {
+    font-size: 17px;
+
 }
+
+.textos3 {
+    margin-top: 15px;
+    font-size: medium;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.textos3 p {
+    font-size: 17px;
+}
+
+
+
+.textos4 {
+    margin-top: 15px;
+    font-size: medium;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.textos4 p {
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+
 
 
 #serviços ul {
@@ -196,6 +221,7 @@ header {
     align-items: flex-start;
     gap: 24px;
     padding: 32px;
+    justify-content: center;
 }
 
 .card-contact {
@@ -328,6 +354,7 @@ footer {
         margin-left: 0;
 
     }
+
 
 
 
