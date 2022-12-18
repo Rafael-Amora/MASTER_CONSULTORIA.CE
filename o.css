@@ -166,6 +166,24 @@ body {
 }
 
 
+.loading {
+    width: 30px;
+    animation: spin 0.9s infinite linear;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 @media screen and (max-width: 1330px) {
     .form-image {
         display: none;
