@@ -13,8 +13,6 @@
 }
 
 
-
-
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 100%;
@@ -34,7 +32,7 @@ nav {
     display: flex;
     height: 80px;
     width: 100%;
-    background-color: #01282e;
+    background-color: rgba(57, 57, 57, 255);
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
@@ -113,6 +111,13 @@ nav .menu-btn i {
     background-image: url(img/trabalho5.jpg);
     background-size: cover;
 }
+
+.logo_empresa img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 
 
 #empresa h1 {
@@ -196,7 +201,6 @@ nav .menu-btn i {
     font-size: 19px;
     padding-bottom: 18px;
 }
-
 
 
 
@@ -373,7 +377,7 @@ footer {
         position: fixed;
         top: 80px;
         left: -100%;
-        background-color: #003840;
+        background-color: rgba(57, 57, 57, 255);
         height: 100vh;
         width: 100%;
         text-align: center;
@@ -400,7 +404,9 @@ footer {
         color: #06d62e;
     }
 
-
+    nav {
+        z-index: 99;
+    }
 
 
 
