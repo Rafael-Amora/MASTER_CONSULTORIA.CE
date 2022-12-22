@@ -30,41 +30,58 @@ body ul {
     font-family: 'Poppins', sans-serif;
 }
 
-
-header {
+nav {
     display: flex;
-    position: fixed;
-    z-index: 99;
+    height: 80px;
     width: 100%;
-
-}
-
-.logo img {
-    margin: auto;
-    height: 120px;
-    width: 400px;
-    border-bottom: 3px #e2e1a6 solid;
-
-
-}
-
-.menu {
-    height: 120px;
-    width: 100%;
-    background-color: rgba(57, 57, 57, 255);
-    display: flex;
-    justify-content: space-between;
+    background-color: #01282e;
     align-items: center;
-    padding-left: 110px;
-    border-bottom: 3px #e2e1a6 solid;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
     flex-wrap: wrap;
-    padding-right: 100px;
+    border-bottom: 2px #06d62e solid;
 }
 
-.menu a {
+nav .logo {
     color: white;
-    font-size: 24px;
+    font-size: 35px;
+    font-weight: 600;
 }
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #06d62e;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
 
 
 .itens {
@@ -357,6 +374,40 @@ footer {
 
     }
 
+    nav .menu-btn i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #06d62e;
+    }
 
 
 
