@@ -43,7 +43,7 @@ nav {
 }
 
 nav .logo {
-    color: white;
+    color: #06d62e;
     font-size: 35px;
     font-weight: 600;
 }
@@ -114,7 +114,9 @@ nav .menu-btn i {
     background-size: cover;
 }
 
-
+.img_logo {
+    align-items: center;
+}
 
 #empresa h1 {
     margin-top: 50px;
