@@ -374,7 +374,7 @@ footer {
     }
 
     nav ul {
-        position: fixed;
+        position: absolute;
         top: 80px;
         left: -100%;
         background-color: rgba(57, 57, 57, 255);
@@ -387,6 +387,7 @@ footer {
 
     nav ul.open {
         left: 0;
+        z-index: 99;
     }
 
     nav ul li {
@@ -403,11 +404,6 @@ footer {
         background: none;
         color: #06d62e;
     }
-
-    nav {
-        z-index: 99;
-    }
-
 
 
 }

@@ -18,5 +18,9 @@ function menuShow() {
     }
 }
 
+function outMenu() {
+    ul.classList.remove('open');
+}
+
 
 
