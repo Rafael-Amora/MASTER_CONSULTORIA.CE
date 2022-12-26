@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+
+}
+
+
+.mao img {
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+
+
+.c button {
+
+    border: none;
+    background-color: #16c05d;
+    padding: 4.5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.c button::hover {
+    background-color: #0c7523;
+}
+
+.c button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.c {
+    text-align: center;
+    margin-top: 30px;
+}
